@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adiptodey.gamepad.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        />
+
+    <Button
+        android:id="@+id/up_btn"
+        android:text="U"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_width="100dp"
+        android:layout_height="82dp"
+        android:background="@drawable/buttonshapeunpressed"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toLeftOf="@+id/right_btn"
+        android:layout_toStartOf="@+id/right_btn" />
+
+    <Button
+        android:id="@+id/left_btn"
+        android:text="L"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_width="100dp"
+        android:layout_height="82dp"
+        android:background="@drawable/buttonshapeunpressed"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_below="@+id/up_btn"
+        android:layout_toLeftOf="@+id/up_btn"
+        android:layout_toStartOf="@+id/up_btn" />
+
+    <Button
+        android:id="@+id/right_btn"
+        android:text="R"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_width="100dp"
+        android:layout_height="82dp"
+        android:background="@drawable/buttonshapeunpressed"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_alignTop="@+id/left_btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/down_btn"
+        android:text="D"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_width="100dp"
+        android:layout_height="82dp"
+        android:background="@drawable/buttonshapeunpressed"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_below="@+id/right_btn"
+        android:layout_toLeftOf="@+id/right_btn"
+        android:layout_toStartOf="@+id/right_btn" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Welcome"
+        android:id="@+id/textView"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/left_btn"
+        android:layout_toStartOf="@+id/left_btn"
+        android:textColor="#ffffff"
+        android:background="#a62fd9"
+        android:layout_margin="20dp"
+        android:maxLines="1000"
+        android:scrollbars="vertical"/>
+
+
+</RelativeLayout>
