@@ -1,2 +1,2 @@
 # GamePad
-Mobile as a gamepad......
+Mobile as a gamepad
